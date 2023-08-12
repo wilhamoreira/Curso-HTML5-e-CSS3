@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLES
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+            </tr>   
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">17 264 943</td>
+            </tr>   
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">17 264 943</td>
+            </tr>  
+            <tr>
+                <td>Pernabumco</td>
+                <td class="numero">17 264 943</td>
+            </tr>    
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr>  
+            <tr>
+                <td>Pernabumco</td>
+                <td class="numero">17 264 943</td>
+            </tr>    
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr>  
+            <tr>
+                <td>Pernabumco</td>
+                <td class="numero">17 264 943</td>
+            </tr>    
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr>  
+            <tr>
+                <td>Pernabumco</td>
+                <td class="numero">17 264 943</td>
+            </tr>    
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+            <tr>
+                <td>Santa Cata</td>
+                <td class="numero">17 264 943</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure quod omnis aliquid ad sapiente, ducimus quasi autem dignissimos perferendis mollitia, nesciunt cum nisi? Eos aliquid magnam recusandae nam autem.
+        Sed accusantium omnis reiciendis nihil doloremque nam sequi aspernatur porro, consequatur placeat explicabo nemo esse, at, optio laborum ea. Consequuntur ea praesentium, quam iusto velit assumenda nobis eaque eius rem!
+        Deserunt ad repellat soluta ab possimus quos sapiente magnam? Autem impedit cupiditate, necessitatibus reiciendis id consequatur corporis molestiae nostrum illum repudiandae qui aperiam placeat exercitationem quasi libero quia, iste aliquam.
+        Labore ipsam non modi quo? Rem adipisci blanditiis, voluptates quibusdam eius sint molestiae impedit! Labore, eligendi magni, quo dolor saepe obcaecati reprehenderit nesciunt ea magnam autem odio? Ducimus, velit id!
+        Sint totam illo error quis reprehenderit perferendis voluptas, magni minus? Recusandae, fugiat aliquam minus omnis voluptates sit quae eligendi quaerat amet! Mollitia quam maxime omnis quos, at doloribus eligendi excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure quod omnis aliquid ad sapiente, ducimus quasi autem dignissimos perferendis mollitia, nesciunt cum nisi? Eos aliquid magnam recusandae nam autem.
+        Sed accusantium omnis reiciendis nihil doloremque nam sequi aspernatur porro, consequatur placeat explicabo nemo esse, at, optio laborum ea. Consequuntur ea praesentium, quam iusto velit assumenda nobis eaque eius rem!
+        Deserunt ad repellat soluta ab possimus quos sapiente magnam? Autem impedit cupiditate, necessitatibus reiciendis id consequatur corporis molestiae nostrum illum repudiandae qui aperiam placeat exercitationem quasi libero quia, iste aliquam.
+        Labore ipsam non modi quo? Rem adipisci blanditiis, voluptates quibusdam eius sint molestiae impedit! Labore, eligendi magni, quo dolor saepe obcaecati reprehenderit nesciunt ea magnam autem odio? Ducimus, velit id!
+        Sint totam illo error quis reprehenderit perferendis voluptas, magni minus? Recusandae, fugiat aliquam minus omnis voluptates sit quae eligendi quaerat amet! Mollitia quam maxime omnis quos, at doloribus eligendi excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure quod omnis aliquid ad sapiente, ducimus quasi autem dignissimos perferendis mollitia, nesciunt cum nisi? Eos aliquid magnam recusandae nam autem.
+        Sed accusantium omnis reiciendis nihil doloremque nam sequi aspernatur porro, consequatur placeat explicabo nemo esse, at, optio laborum ea. Consequuntur ea praesentium, quam iusto velit assumenda nobis eaque eius rem!
+        Deserunt ad repellat soluta ab possimus quos sapiente magnam? Autem impedit cupiditate, necessitatibus reiciendis id consequatur corporis molestiae nostrum illum repudiandae qui aperiam placeat exercitationem quasi libero quia, iste aliquam.
+        Labore ipsam non modi quo? Rem adipisci blanditiis, voluptates quibusdam eius sint molestiae impedit! Labore, eligendi magni, quo dolor saepe obcaecati reprehenderit nesciunt ea magnam autem odio? Ducimus, velit id!
+        Sint totam illo error quis reprehenderit perferendis voluptas, magni minus? Recusandae, fugiat aliquam minus omnis voluptates sit quae eligendi quaerat amet! Mollitia quam maxime omnis quos, at doloribus eligendi excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure quod omnis aliquid ad sapiente, ducimus quasi autem dignissimos perferendis mollitia, nesciunt cum nisi? Eos aliquid magnam recusandae nam autem.
+        Sed accusantium omnis reiciendis nihil doloremque nam sequi aspernatur porro, consequatur placeat explicabo nemo esse, at, optio laborum ea. Consequuntur ea praesentium, quam iusto velit assumenda nobis eaque eius rem!
+        Deserunt ad repellat soluta ab possimus quos sapiente magnam? Autem impedit cupiditate, necessitatibus reiciendis id consequatur corporis molestiae nostrum illum repudiandae qui aperiam placeat exercitationem quasi libero quia, iste aliquam.
+        Labore ipsam non modi quo? Rem adipisci blanditiis, voluptates quibusdam eius sint molestiae impedit! Labore, eligendi magni, quo dolor saepe obcaecati reprehenderit nesciunt ea magnam autem odio? Ducimus, velit id!
+        Sint totam illo error quis reprehenderit perferendis voluptas, magni minus? Recusandae, fugiat aliquam minus omnis voluptates sit quae eligendi quaerat amet! Mollitia quam maxime omnis quos, at doloribus eligendi excepturi.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure quod omnis aliquid ad sapiente, ducimus quasi autem dignissimos perferendis mollitia, nesciunt cum nisi? Eos aliquid magnam recusandae nam autem.
+        Sed accusantium omnis reiciendis nihil doloremque nam sequi aspernatur porro, consequatur placeat explicabo nemo esse, at, optio laborum ea. Consequuntur ea praesentium, quam iusto velit assumenda nobis eaque eius rem!
+        Deserunt ad repellat soluta ab possimus quos sapiente magnam? Autem impedit cupiditate, necessitatibus reiciendis id consequatur corporis molestiae nostrum illum repudiandae qui aperiam placeat exercitationem quasi libero quia, iste aliquam.
+        Labore ipsam non modi quo? Rem adipisci blanditiis, voluptates quibusdam eius sint molestiae impedit! Labore, eligendi magni, quo dolor saepe obcaecati reprehenderit nesciunt ea magnam autem odio? Ducimus, velit id!
+        Sint totam illo error quis reprehenderit perferendis voluptas, magni minus? Recusandae, fugiat aliquam minus omnis voluptates sit quae eligendi quaerat amet! Mollitia quam maxime omnis quos, at doloribus eligendi excepturi.
+    </p>
+</body>
+</html>
